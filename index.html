@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+  <header class="head">
+	<link rel="stylesheet" type="text/css" href="Resume.css">
+    <Title>Michael Berger Resume</Title>
+    <img class="right" src='https://d2jyir0m79gs60.cloudfront.net/college/logos_compressed/Kent_State.jpg' align="right" alt="Kent state Logo" height="160">
+    <img class="left" src='https://d2jyir0m79gs60.cloudfront.net/college/logos_compressed/Kent_State.jpg' alt="Kent state Logo" height="160">
+    <h1 id="Title">Michael Berger</h1>
+    <p class="email"> <a href="mailto:mberge13@kent.edu">mberge13@kent.edu</a></p>
+    <p class="adress">3777 Pin Oak Drive</p>
+    <p class="phone">Stow, Ohio 44224 (330)-842-2677</p>
+
+  </header>
+  <hr>
+  <body>
+
+	<div class="section">
+
+		<iframe src= "https://www.youtube.com/watch?v=nV7xDsDCvfM">
+			<div class="video-container">
+				<video autoplay loop muted>
+                <source src= "Blue Matrix.mp4" type="video/mp4">
+				</video>
+			</div>
+		</iframe>
+		
+		
+    <section class ="obj">
+      <h2>Career Objective:</h2>
+      <p> Seeking a position in Programming.</p>
+    </section>
+    <section class="edu">
+      <h2>EDUCATION:</h2>
+      <ul>
+        <li>
+          <p>Kent State University, Kent, Ohio 8/2016 - 5/2021</p>
+          <p>IT Security Pro. Certification 7/2020</p>
+          <p>Bachelors of Digital Science 5/2021</p>
+        </li>
+        <li>Stark State College Of Technology, Canton, Ohio 6/2009 - 7/2014</p>
+          <p>Certificate in AutoCAD 1Yr.<p>
+              <p>Associates Degree in Mechanical Engineering 2Yr.</p>
+        </li>
+        <li>
+          <p>The University of Akron, Akron, Ohio 8/2008 - 5/2009</p>
+          <p>Stow-Munroe Falls High School, Stow, Ohio June 2008</p>
+          <p>Manufacturing and Pre-Engineering Academy Grade Point Average: 3.0/4.0</p>
+          <ul>
+            <li>CAD</li>
+            <li>Electronics</li>
+            <li>Polymers</li>
+            <li>Manufacturing</li>
+          </ul>
+      </ul>
+    </section>
+    <section class="work">
+      <h2>WORK EXPERIENCE:</h2>
+      <ul>
+        <li>7/12 - Current Landscaper, Ellsworth Golf Course, Hudson, Ohio.</li>
+        <li>8/2017 - 1/2020 Student IT Team Leader, Kent State University, Kent, Ohio.</li>
+        <li>11/15 - 2/16 SMT Operator, Airborn Electronics, Akron, Ohio.</li>
+        <li>11/12 - 1/13 Package Handler, FedEx, Canton, Ohio.</li>
+        <li>9/09 - 5/12 Math Tutor, Stark State College Of Technology, Canton, Ohio.</li>
+        <li>9/08 - 5/09 Student Assistant, The University of Akron, Akron, Ohio.
+          <p>Responsible for opening computer labs, setting up computer&nbsp labs,<br> maintaining computers in the lab, fixing computers, helping students and answering questions.</p>
+        </li>
+        <li>9/06 - 8/08 Crew Member/Crew Trainer, Burger King, Stow, Ohio</li>
+      </ul>
+    </section>
+    <section class="act">
+      <h2>ACTIVITIES AND INTERESTS:</h2>
+      <p><a href="https://www.lifeteenhudson.com">Central American Medical Outreach </a>"CAMO" Work - Medical Equipment Repair.</p>
+      <p> Hudson <a href="https://www.lifeteenhudson.com"> St. Marys</a> and Stow <a href="https://www.holyfamilystow.org/lifeteen"> Holy Family </a>
+      <p>Life Teen/Core Team.</p>
+	</section>
+    <section class="skills">
+      <h2>ADDITIONAL SKILLS:</h2>
+      <ul>
+        <li>Computer Skills</li>
+        <li>Microsoft Programs</li>
+        <li>AutoCAD</li>
+        <li>AutoCADInventor</li>
+        <ul>
+          <h3>Programming:</h3>
+          <li>Python</li>
+          <li>AHK</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>C++</li>
+          <li>Visual Basic</li>
+        </ul>
+      </ul>
+    </section>
+	</div>
+	<script>
+	
+		function scrollApearobj(){
+			var skills = document.querySelector('.obj');
+			var placement = skills.getBoundingClientRect().top;
+			var screenPosition = window.innerHeight/1.7;
+			
+			if(placement < screenPosition){
+				skills.classList.add('showskills');
+				}
+			}
+		function scrollApearedu(){
+			var skills = document.querySelector('.edu');
+			var placement = skills.getBoundingClientRect().top;
+			var screenPosition = window.innerHeight/1.6;
+			
+			if(placement < screenPosition){
+				skills.classList.add('showskills');
+				}
+			}
+		function scrollApearwork(){
+			var skills = document.querySelector('.work');
+			var placement = skills.getBoundingClientRect().top;
+			var screenPosition = window.innerHeight/1.5;
+			
+			if(placement < screenPosition){
+				skills.classList.add('showskills');
+				}
+			}
+		function scrollApearact(){
+			var skills = document.querySelector('.act');
+			var placement = skills.getBoundingClientRect().top;
+			var screenPosition = window.innerHeight/1.4;
+			
+			if(placement < screenPosition){
+				skills.classList.add('showskills');
+				}
+			}
+		function scrollApearskills(){
+			var skills = document.querySelector('.skills');
+			var placement = skills.getBoundingClientRect().top;
+			var screenPosition = window.innerHeight/1.3;
+			
+			if(placement < screenPosition){
+				skills.classList.add('showskills');
+				}
+			}
+	window.addEventListener('scroll',scrollApearobj);	
+	window.addEventListener('scroll',scrollApearedu);
+	window.addEventListener('scroll',scrollApearwork);
+	window.addEventListener('scroll',scrollApearact);
+	window.addEventListener('scroll',scrollApearskills);
+	</script>
+	<script>
+	function example_change_cursor() {
+		document.body.style.cursor = document.getElementById('example-cursor').options[document.getElementById('example-cursor').selectedIndex].value;
+	}
+	function example_restore_cursor() {
+		document.body.style.cursor = 'default';
+	}
+</script>
+<select id="example-cursor">
+	<option>default</option>
+	<option>crosshair</option>
+	<option>e-resize</option>
+	<option>help</option>
+	<option>move</option>
+	<option>n-resize</option>
+	<option>ne-resize</option>
+	<option>nw-resize</option>
+	<option>pointer</option>
+	<option>progress</option>
+	<option>s-resize</option>
+	<option>se-resize</option>
+	<option>sw-resize</option>
+	<option>text</option>
+	<option>w-resize</option>
+	<option>wait</option>
+</select>
+<script>
+	  var myVar = setInterval(function() {
+  myTimer();
+}, 1000);
+
+function myTimer() {
+  var d = new Date();
+  document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+}
+</script>
+<input type="button" onclick="example_change_cursor()" value="Change Cursor" />
+<input type="button" onclick="example_restore_cursor()" value="Restore Default" />
+  </body>
+  <footer>
+
+        <div class="header">
+  <br> <a href="http://www.tcip.se" title="www.tcip.se"></a></div>
+
+  <p id="clock">Michael Berger 330-842-2677</p><p>Michael Berger 330-842-2677</p>
+  </footer>
+
+</html>
